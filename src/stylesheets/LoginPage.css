@@ -1,0 +1,459 @@
+.loginPage{
+    position: relative;
+    width: 100%;
+}
+
+.loginPage_background{
+    position: relative;
+    height: 100vh;
+}
+
+.loginPage_gradient{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 10%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+}
+
+.loginPage_logo{
+    position: absolute;
+    left: 0px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 15px;
+}
+
+.loginPage_button{
+    position: absolute;
+    font-weight: 1.3rem;
+    padding: 0px 20px;
+    top: 30px;
+    right: 0px;
+    height: 35px;
+    object-fit: contain;
+    margin-right: 10px;
+    color: white;
+    background-color: #ff1c27;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.loginPage_body{
+    z-index: 1;
+    color: white;
+    position:absolute;
+    top: 40%;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.loginPage_body > h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.loginPage_body > h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.loginPage_body > h3{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.loginPage_input{
+    padding: 20px;
+}
+
+.loginPage_input >form >input{
+    padding: 10px;
+    width: 30%;
+    height: 25px;
+    max-width: 600px;
+    border: none;
+    font-size: 1.05rem;
+    border-radius: 5px 0 0 5px;
+}
+
+.loginPage_inputBtn{
+    padding: 10px 20px;
+    border: none;
+    height: 45px;
+    background-color: #ff1c27;
+    color: white;
+    cursor: pointer;
+    font-size: 1.05rem;
+    border-radius: 5px;
+}
+
+.footer{
+    color: white;
+    border-top: 6px solid rgb(84, 82, 82);
+    padding: 20px 90px 20px 90px;
+    margin-top: 100px;
+}
+
+
+
+
+.languageSelector{
+  height: 60px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+
+.bottomContainer{
+    color: white;
+}
+
+.bottomContainer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 6px solid rgb(84, 82, 82);
+    padding: 50px 0;
+    width: 100%;
+}
+
+.tv{
+    padding-right: 100px;
+    margin-right: auto;
+}
+
+.mobile{
+    padding-left: 150px;
+    margin-left: auto;
+}
+
+.imac{
+    padding-right: 100px;
+    margin-right: auto;
+}
+
+.container_title1, .container_title2, .container_title3{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.container_text1, .container_text2, .container_text3{
+    font-size: 1.5rem;
+}
+
+.container_a{
+    box-sizing: border-box;
+    padding: 0 80px;
+}
+
+
+
+.questions{
+    cursor: pointer;
+    color: white;
+}
+
+.FAQ{
+    width: 100%;
+    border-top: 6px solid rgb(84, 82, 82);
+    padding-top: 40px;
+}
+
+.sub_FAQ{
+    width: 55%;
+    margin: auto;
+}
+
+.questionContainer{
+    background-color: gray;
+    font-size: 1.8rem;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.questionContainerInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nonedisplay{
+    display: none;
+}
+
+.plusSymbol{
+    font-size: 2.5rem;
+    margin-right: 15px;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+.question{
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.answer{
+    background-color: gray;
+    margin: 5px 0;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    white-space: pre-line;
+    border-top: 5px solid black;
+}
+
+.answerContainer{
+    animation: toggleAns 0.35s ease-in forwards;
+}
+
+.bottom_input{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom_inputBtn{
+    border: none;
+    height: 45px;
+    background-color: #ff1c27;
+    color: white;
+    cursor: pointer;
+    font-size: 1.05rem;
+    border-radius: 5px;
+    min-width: 218px;
+}
+
+.bottom_input_text{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footerContainer{
+    display: flex;
+    width: 90vw;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px){
+    .footerContainer{
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-width: 1150px) and (min-width:975px){
+    .bottomContainer{
+        height: 350px;
+    }
+
+    .container_title1, .container_title2, .container_title3{
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .container_text1, .container_text2, .container_text3{
+        font-size: 1.3rem;
+    }
+    
+    .imageContainer{
+        flex-basis: 50%;
+    }
+
+    .tv{
+        margin-right: auto;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .mobile{
+        margin-left: auto;
+        width: 60%;
+        padding: 0;
+    }
+    
+    .imac{
+        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 975px){
+
+    .bottomContainer{
+        display: block;
+        height: 400px;
+    }
+
+    .container_a{
+        padding: 0 10px;
+    }
+
+    .tv{
+        margin-right: auto;
+        width: 48vw;
+        padding: 0;
+    }
+    
+    .mobile{
+        margin-left: auto;
+        width: 25vw;
+        padding: 0;
+    }
+    
+    .imac{
+        margin: auto;
+        width: 45vw;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 945px) and (min-width: 860px){
+    .mobile{
+        margin-left: auto;
+        width: 23vw;
+        padding: 0;
+    }
+}
+
+@media screen and  (max-width:750px){
+    .bottomContainer{
+        display: block;
+        height: 400px;
+    }
+
+    .tv{
+        margin-right: auto;
+        width: 48vw;
+    }
+    
+    .mobile{
+        margin-left: auto;
+        width: 28vw;
+    }
+    
+    .imac{
+        margin: auto;
+        width: 50vw;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .bottomContainer{
+        display: block;
+        height: 300px;
+    }
+    
+    .loginPage_body > h1{
+        font-size: 2rem;
+    }
+    
+    .loginPage_body > h2{
+        font-size: 2rem;
+    }
+    
+    .loginPage_body > h3{
+        font-size: 1.7rem;
+    }
+
+    .questionContainer{
+        font-size: 1.5rem;
+    }
+
+    .answer{
+        font-size: 1.2rem;
+    }
+    
+    .container_title1, .container_title2, .container_title3{
+        font-size: 1.8rem;
+    }
+    
+    .container_text1, .container_text2, .container_text3{
+        font-size: 1.3rem;
+    }
+
+    .bottom_input_text{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .loginPage_body > h1{
+        font-size: 1.8rem;
+    }
+    
+    .loginPage_body > h2{
+        font-size: 1.8rem;
+    }
+    
+    .loginPage_body > h3{
+        font-size: 1.5rem;
+    }
+
+    .questionContainer{
+        font-size: 1.2rem;
+    }
+
+    .answer{
+        font-size: 1rem;
+    }
+
+    .container_title1, .container_title2, .container_title3{
+        font-size: 1.6rem;
+    }
+    
+    .container_text1, .container_text2, .container_text3{
+        font-size: 1.2rem;
+    }
+
+    .bottom_input_text{
+        font-size: 1.6rem;
+    }
+}
+
+@keyframes toggleAns{
+    from{
+        height: 0px;
+        opacity: 0.3;
+        transform: translateY(-10%);
+    }
+
+    to{
+        height: 100%;
+        opacity: 1;
+    }
+}

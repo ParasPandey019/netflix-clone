@@ -1,0 +1,278 @@
+.rows{
+    color: white;
+    width: 95vw;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    scroll-behavior: smooth;
+    align-items: center;
+    transform: scaleY(1.3);
+}
+
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row_poster{
+    height: 150px;
+    width: 267px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.row_posterLarge{
+    height: 375px;
+    width: 250px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.prev{
+    height: 185px;
+    background-color: none;
+    width: 60px;
+    position: absolute;
+    left: -3px;
+    cursor: pointer;
+    top: 0px;
+    opacity: 0.75;
+    z-index: 2;
+}
+
+.next{
+    height: 185px;
+    background-color: none;
+    width: 60px;
+    position: absolute;
+    right: -3px;
+    cursor: pointer;
+    top: 0px;
+    opacity: 0.75;
+    z-index: 2;
+}
+
+.prev_Large{
+    height: 400px;
+    background-color: none;
+    width: 70px;
+    position: absolute;
+    left: -3px;
+    top: 50px;
+    cursor: pointer;
+    top: 0px;
+    opacity: 0.75;
+    z-index: 2;
+}
+
+.next_Large{
+    height: 400px;
+    background-color: none;
+    width: 70px;
+    position: absolute;
+    right: -3px;
+    top: 50px;
+    cursor: pointer;
+    top: 0px;
+    opacity: 0.75;
+    z-index: 2;
+}
+
+.next:hover, .prev:hover{
+    background-color: rgba(22,22,22,0.60);
+    cursor: pointer;
+    transition: all 0.75s;
+    opacity: 1;
+}
+
+.arrowNext{
+    width: 80%;
+    position: absolute;
+    margin: auto;
+    top: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.arrowPrev{
+    width: 80%;
+    position: absolute;
+    margin: auto;
+    top: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.modalPopUp{
+    height: 80vh;
+    position: relative;
+}
+
+.trailerContainer{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: black;
+}
+
+.trailer{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.trailerCloseButton{
+    position: absolute;
+    right: -35px;
+    top: -3.5px;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.5s;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trailerCloseButton:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.trailerBackButton{
+    position: absolute;
+    left: -50px;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trailerBackButton:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.row_image{
+    height: 150px;
+    width: 267px;
+    position: relative;
+    margin: 0 12px;
+    transition: all 0.5s;
+    transform: scaleY(0.77);
+}
+
+.row_imageLarge{
+    height: 375px;
+    width: 250px;
+    position: relative;
+    margin: 0px 15px;
+    transition: all 0.75s;
+}
+
+.image_hoverLarge{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    cursor: pointer;
+}
+
+.image_hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    background-image: linear-gradient(
+        270deg,
+        transparent,
+        rgba(37, 37, 37, 0.61),
+        #111
+    );
+}
+.hoverContent{
+    opacity: 0;
+}
+
+.hoverContent:hover{
+    opacity: 1;
+}
+
+.row_image:hover{
+    transform: scaleY(1);
+    transform: scaleX(1.3);
+    border: 2px solid white;
+    z-index: 2;
+}
+
+.row_imageLarge:hover{
+    transform: scaleY(1);
+    transform: scaleX(1.3);
+    border: 2px solid white;
+    z-index: 2;
+}
+
+.hoverTitle{
+    font-size: 1.3rem;
+}
+
+.hoverOverview{
+    font-size: 0.8rem;
+}
+
+
+.hoverText{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.hoverTextLarge{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 20px;
+}
+
+.rowButton:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.rowTitle{
+    margin-left: 30px;
+    font-size: 1.45rem;
+}
+
+@media (max-width: 650px){
+    .prev, .next{
+        display: none;
+    }
+}

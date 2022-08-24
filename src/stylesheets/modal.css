@@ -1,0 +1,136 @@
+.modalBackground{
+    width: 100%;
+    height: 100%;
+}
+
+.modalHeader{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    height: 100%;
+}
+
+.modal{
+    height: 100%;
+    color: white;
+    position: relative;
+}
+
+.modal_elements{
+    position: absolute;
+    left: 25px;
+    top: 10vh;
+    z-index: 2;
+}
+
+.modal_btn{
+    color: white;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.modal_btn:hover{
+    transform: scale(1.1);
+}
+
+.modal_list:hover{
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.5s;
+}
+
+.modal_play{
+    background-color: #ff1c27;
+}
+
+.modal_list{
+    background-color: rgba(255, 254, 254, 0.25);
+}
+
+.modal_fade{
+    height: 7.4rem;
+    width: 100%;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(25, 24, 24, 0.05),
+        #111
+    );
+
+    position: absolute;
+    bottom: 0px;
+    height: 15%;
+}
+
+.modal_description{
+    max-width: 500px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: rgb(186, 186, 197);
+}
+
+.modal_fade2{
+    height: 7.4rem;
+    width: 80%;
+    background-image: linear-gradient(
+        270deg,
+        transparent,
+        rgba(17, 16, 16, 0.65),
+        #111
+    );
+
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.closeButton{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.5s;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.closeButton:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.modal_title{
+    margin-bottom: 0px;
+}
+
+.modal_rating{
+    font-size: 1.3rem;
+    color: rgb(39, 161, 39);
+    margin-bottom: 0px;
+}
+
+.modal_date{
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.modal_watch{
+    font-weight: 500;
+}
+
+
+
+
+
+
+

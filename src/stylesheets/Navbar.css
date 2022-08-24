@@ -1,0 +1,67 @@
+.navbar{
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: none;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.navRight, .navLeft{
+    display: flex;
+    align-items: center;
+}
+
+.fa-bell, .fa-magnifying-glass{
+    font-size: 20px;
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-bell:hover, .fa-magnifying-glass:hover{
+    transform: translateY(-5px);
+}
+
+
+
+.navLinks{
+    color: rgb(198, 193, 193);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:500px){
+    .navLinks{
+        display: none;
+    }
+}
+
+.navLinks:hover{
+    color: white;
+}
+
+.navbar_black{
+    background-color: #111;
+}
+
+.navbar_logo{
+    height: 50px;
+    object-fit: contain;
+    margin-left: 15px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.navbar_avatar{
+    height: 40px;
+    object-fit: contain;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
