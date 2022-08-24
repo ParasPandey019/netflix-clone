@@ -106,7 +106,7 @@
 .footer{
     color: white;
     border-top: 6px solid rgb(84, 82, 82);
-    padding: 20px 90px 20px 90px;
+    padding: 20px 0px;
     margin-top: 100px;
 }
 
@@ -260,6 +260,7 @@
     align-items: center;
     justify-content: center;
 }
+
 
 @media (max-width: 767px){
     .footerContainer{
