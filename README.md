@@ -6,7 +6,7 @@ Currently, I have implemented the basic UI with functionality like media details
 
 Movie data was fetched from TMDB and trailer videos from Youtube.
 
-Checkout the live app [**here**](https://019-netlifx-clone.netlify.app/).
+## **Checkout the live app [**here**](https://019-netlifx-clone.netlify.app/).**
 
 # Dependencies used
 
